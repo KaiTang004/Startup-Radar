@@ -1,0 +1,44 @@
+.account-nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.account-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  font: bold 14px Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms, box-shadow 150ms;
+}
+
+.account-button-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.account-button-primary:hover {
+  background: var(--accent-hover);
+}
+
+.account-button-secondary {
+  background: white;
+  color: var(--heading-color);
+}
+
+.account-button-secondary:hover {
+  background: var(--accent-soft);
+}
+
+
+.account-button:focus-visible {
+  outline: 3px solid var(--heading-color);
+  outline-offset: 3px;
+}
